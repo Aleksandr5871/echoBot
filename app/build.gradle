@@ -13,6 +13,9 @@ repositories {
 
 dependencies {
     implementation 'org.telegram:telegrambots-longpolling:9.5.0'
+    implementation 'org.telegram:telegrambots-client:9.5.0'
+
+    implementation 'org.slf4j:slf4j-simple:2.0.9'
 
     testImplementation libs.junit.jupiter
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
