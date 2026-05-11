@@ -1,0 +1,53 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+gradle-app.setting
+
+# Gradle Wrapper (оставляем только .jar, но игнорируем распакованное)
+/gradle/wrapper/gradle-wrapper.properties?download
+/gradle/wrapper/gradle-wrapper.properties?downloadId
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.classpath
+.project
+.settings/
+.vscode/
+.mvn/
+
+# Java
+*.class
+*.log
+*.lock
+*.jar
+*.war
+*.ear
+target/
+bin/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+
+# Telegram bot (ваши токены и конфиги)
+config.properties
+application.properties
+local.properties
+*.token
+*.secret
+.env
+
+# Временные файлы
+*.tmp
+*.swp
+*.swo
+*~

@@ -1,0 +1,35 @@
+
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'ru.echobot'
+version = '1.0.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.telegram:telegrambots-longpolling:9.5.0'
+
+    testImplementation libs.junit.jupiter
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+    implementation libs.guava
+}
+
+
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(21)
+    }
+}
+
+application {
+    mainClass = 'java.App'
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
